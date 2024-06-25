@@ -7,21 +7,28 @@
         <style>
             body
             {
-                margin:0;
+                
+                margin: 0;
                 text-align: center;
+            }
+            div
+            {
+                margin:0;
+                padding:0;
             }
 
             #header
             {
                 margin:0 auto;
+                padding: 0;
                 height: 120px;
                 color: black;
+                display:block;
             }
 
-            #header a
+            #header li
             {
                 display: inline-block;
-                margin-top:53px;
                 margin-right: 40px;
                 margin-left: 40px;
             }
@@ -32,19 +39,30 @@
                 margin-right: 40px;
                 margin-left: 40px;
             }
+
+            a
+            {
+                color: black;
+                text-decoration: none;
+            }
+            a:hover
+            {
+                color:red;
+                text-decoration: none;
+            }
         </style>
     </head>
 
     <body>
-        <div hei="120">
-            <ul>
-                <li>How it Work</li>
-                <li>Gifts</li>
-                <li>About</li>
-                <li><img src="logo.png"></li>
-                <li>Login</li>
-                <li>Members</li>
-                <li>Contracts</li>
+        <div >
+            <ul id="header">
+                <li><a href="#" target="_self">How it Work</a></li>
+                <li><a href="#" target="_self">Gifts</a></li>
+                <li><a href="src/about.html" target="_self">About</a></li>
+                <li><img src="img/logo.png"></li>
+                <li><a href="#" target="_self">Login</a></li>
+                <li><a href="#" target="_self">Members</a></li>
+                <li><a href="#" target="_self">Contracts</a></li>
             </ul>
         </div>
     </body>
